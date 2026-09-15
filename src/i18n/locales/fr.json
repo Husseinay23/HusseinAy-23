@@ -17,28 +17,73 @@
   "about": {
     "title": "À propos de moi",
     "subtitle": "Développeur Full-Stack & Résolveur de Problèmes Créatif",
-    "description": "Je suis un développeur full-stack passionné avec une expertise dans la création d'applications web modernes et évolutives. J'aime transformer des problèmes complexes en solutions simples, belles et intuitives.",
+    "description": "Étudiant en informatique spécialisé dans le développement web full-stack avec une forte expertise frontend en Next.js, React, TypeScript et ingénierie UI moderne. Expérimenté dans la création d'applications web évolutives et réactives, l'optimisation des performances frontend, l'intégration d'APIs et de systèmes CMS.",
     "skills": "Compétences et Expertise",
     "experience": "Expérience",
     "education": "Formation",
     "passion": "Ma Passion",
-    "passionText": "Je suis motivé par le désir de créer des expériences numériques exceptionnelles. Que ce soit pour créer des interfaces pixel-perfect ou pour concevoir des systèmes backend robustes, j'apporte créativité et excellence technique à chaque projet."
+    "passionText": "Je suis passionné par l'architecture frontend, l'expérience utilisateur et les applications web haute performance. Que ce soit pour créer des interfaces pixel-perfect, construire des configurateurs de produits personnalisés ou concevoir des systèmes backend robustes, j'apporte créativité et excellence technique à chaque projet."
+  },
+  "experience": {
+    "title": "Expérience",
+    "current": "Actuel",
+    "aqwas": {
+      "title": "Stagiaire en Développement Logiciel",
+      "company": "Aqwas",
+      "location": "Arabie Saoudite (À distance)",
+      "period": "Mars 2026 – Mai 2026",
+      "description": "Direction de la refonte et du développement frontend d'une plateforme touristique gouvernementale pour la région d'Asser en utilisant Next.js, React et TypeScript. Conception et implémentation de plus de 20 pages réactives et composants réutilisables. Augmentation des performances du site de 80% grâce à l'optimisation Lighthouse. Construction d'un système de localisation arabe/anglais avec support mode sombre/clair."
+    },
+    "harmonically": {
+      "title": "Développeur Full-Stack Junior",
+      "company": "Harmonically Labs",
+      "location": "À distance",
+      "period": "Août 2025 – Février 2026",
+      "description": "Travaillé comme développeur full-stack junior pendant ~7 mois dans une équipe startup, contribuant à deux plateformes de production maintenant en ligne et vendues. Construction d'EcoSouk, une marketplace multi-locataires avec panneau d'administration marchand, et Asalyha, une plateforme e-commerce pour un détaillant saoudien."
+    },
+    "united": {
+      "title": "Spécialiste Centre des Opérations Réseau (NOC)",
+      "company": "United.CD",
+      "location": "Kinshasa, RD Congo",
+      "period": "Octobre 2024 – Janvier 2025",
+      "description": "Dépannage des problèmes réseau, détection et réponse aux alertes, configuration et déploiement d'équipements réseau, et support des services d'accès à distance."
+    },
+    "oscar": {
+      "title": "Gestionnaire des Opérations Commerciales",
+      "company": "Oscar Print",
+      "location": "Kinshasa, RD Congo",
+      "period": "Juin 2018 – Août 2018",
+      "description": "Géré et participé avec une équipe dans une imprimerie et un cybercafé. Résolu les problèmes d'optimisation, appris divers outils d'impression, et participé à la tarification et aux négociations avec les clients."
+    }
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Récupérés automatiquement depuis GitHub",
+    "subtitle": "Une vitrine de plateformes de production, travaux clients et expériences techniques",
     "viewCode": "Voir le code",
     "viewLive": "Démo en direct",
+    "viewDetails": "Voir les détails",
     "noDescription": "Aucune description fournie",
     "loading": "Chargement des projets...",
     "error": "Échec du chargement des projets",
     "filters": {
       "all": "Tous",
-      "react": "React",
-      "typescript": "TypeScript",
-      "fullstack": "Fullstack",
-      "uiux": "UI/UX",
-      "systems": "Systèmes"
+      "flagship": "Phares",
+      "inProgress": "En cours",
+      "mobile": "Mobile",
+      "research": "Recherche"
+    },
+    "categories": {
+      "flagship": "Projet Phare",
+      "inProgress": "En cours",
+      "mobile": "Application Mobile",
+      "research": "Recherche / Technique"
+    },
+    "status": {
+      "liveSold": "En ligne, Vendu",
+      "live": "En ligne",
+      "complete": "Terminé",
+      "inProgress": "En cours",
+      "portfolio": "Pièce de Portfolio"
     }
   },
   "contact": {
@@ -70,27 +115,8 @@
       "instagram": "Instagram"
     }
   },
-  "experience": {
-    "title": "Expérience",
-    "current": "Actuel",
-    "united": {
-      "title": "Spécialiste Centre des Opérations Réseau (NOC)",
-      "company": "United.CD",
-      "location": "Kinshasa, RD Congo",
-      "period": "Octobre 2024 - Janvier 2025",
-      "description": "Dépannage des problèmes réseau, détection et réponse aux alertes, configuration et déploiement d'équipements réseau, et support des services d'accès à distance."
-    },
-    "oscar": {
-      "title": "Gestionnaire des Opérations Commerciales",
-      "company": "Oscar Print",
-      "location": "Kinshasa, RD Congo",
-      "period": "Juin 2018 - Août 2018",
-      "description": "Géré et participé avec une équipe dans une imprimerie et un cybercafé. Résolu les problèmes d'optimisation, appris divers outils d'impression, et participé à la tarification et aux négociations avec les clients."
-    }
-  },
   "theme": {
     "light": "Mode clair",
     "dark": "Mode sombre"
   }
 }
-
