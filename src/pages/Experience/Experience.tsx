@@ -10,13 +10,35 @@ export const Experience = () => {
 
   const experiences = [
     {
+      title: t("experience.aqwas.title"),
+      company: t("experience.aqwas.company"),
+      location: t("experience.aqwas.location"),
+      period: t("experience.aqwas.period"),
+      description: t("experience.aqwas.description"),
+      highlights: [
+        "Led frontend redesign of government tourism platform for Asser region",
+        "Designed and implemented 20+ responsive pages and reusable UI components",
+        "Increased website performance by 80% through Lighthouse optimization",
+        "Built Arabic/English localization system with dark/light mode support",
+        "Contributed to AI SaaS Proposal Generator with OpenAI GPT integration",
+        "Frontend contributions helped win recognition at ICGAT competition",
+      ],
+      link: "#",
+      current: false,
+    },
+    {
       title: t("experience.harmonically.title"),
       company: t("experience.harmonically.company"),
       location: t("experience.harmonically.location"),
       period: t("experience.harmonically.period"),
       description: t("experience.harmonically.description"),
+      highlights: [
+        "Built EcoSouk: multi-tenant marketplace with merchant admin panel",
+        "Built Asalyha: e-commerce platform for Saudi Arabia-based retailer",
+        "Contributed to 2 production platforms that are now live and sold",
+      ],
       link: "https://harmonicallylabs.com/en",
-      current: true,
+      current: false,
     },
     {
       title: t("experience.united.title"),
@@ -162,6 +184,26 @@ export const Experience = () => {
                   >
                     {exp.description}
                   </p>
+                  
+                  {/* Highlights */}
+                  {exp.highlights && exp.highlights.length > 0 && (
+                    <ul className={`
+                      mt-4 space-y-2
+                    `}>
+                      {exp.highlights.map((highlight, hIndex) => (
+                        <li
+                          key={hIndex}
+                          className={`
+                            flex items-start gap-2 text-sm
+                            ${isDark ? "text-gray-400" : "text-gray-600"}
+                          `}
+                        >
+                          <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#4F7FFF] mt-1.5" />
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </motion.div>
             ))}

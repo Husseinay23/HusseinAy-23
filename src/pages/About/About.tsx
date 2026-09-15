@@ -13,15 +13,14 @@ export const About = () => {
   const techStackRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { name: "React", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "Python", level: 75 },
-    { name: "UI/UX Design", level: 85 },
-    { name: "System Architecture", level: 80 },
+    { name: "Next.js / React", level: 95 },
+    { name: "TypeScript", level: 90 },
+    { name: "Node.js / API Development", level: 85 },
+    { name: "Firebase / Directus CMS", level: 85 },
+    { name: "UI/UX & Responsive Design", level: 90 },
+    { name: "Python / Machine Learning", level: 75 },
   ];
 
-  // GSAP animation for tech stack
   useEffect(() => {
     if (techStackRef.current) {
       const techItems = techStackRef.current.querySelectorAll(".tech-item");
@@ -64,21 +63,28 @@ export const About = () => {
   }, []);
 
   const techStack = [
+    { name: "Next.js", icon: TechIcons["Next.js"] },
     { name: "React", icon: TechIcons.React },
     { name: "TypeScript", icon: TechIcons.TypeScript },
     { name: "JavaScript", icon: TechIcons.JavaScript },
-    { name: "Python", icon: TechIcons.Python },
-    { name: "HTML5", icon: TechIcons.HTML5 },
-    { name: "CSS3", icon: TechIcons.CSS3 },
     { name: "TailwindCSS", icon: TechIcons.TailwindCSS },
-    { name: "React Native", icon: TechIcons["React Native"] },
     { name: "Node.js", icon: TechIcons["Node.js"] },
-    { name: "SQL", icon: TechIcons.SQL },
-    { name: "Java", icon: TechIcons.Java },
-    { name: "Android Studio", icon: TechIcons["Android Studio"] },
-    { name: "GSAP", icon: TechIcons.GSAP },
+    { name: "Firebase", icon: TechIcons.Firebase },
+    { name: "Directus", icon: TechIcons.Directus },
+    { name: "Medusa JS", icon: TechIcons["Medusa JS"] },
+    { name: "React Native", icon: TechIcons["React Native"] },
+    { name: "Expo", icon: TechIcons.Expo },
+    { name: "Python", icon: TechIcons.Python },
     { name: "Framer Motion", icon: TechIcons["Framer Motion"] },
-    { name: "Three.js", icon: TechIcons["Three.js"] },
+    { name: "GSAP", icon: TechIcons.GSAP },
+  ];
+
+  const stats = [
+    { value: "2", label: "Shipped & Sold Platforms", color: "text-green-400" },
+    { value: "6", label: "Completed Web Builds", color: "text-[#4F7FFF]" },
+    { value: "2", label: "In Active Development", color: "text-amber-400" },
+    { value: "22K", label: "Dialect Dataset Clips", color: "text-purple-400" },
+    { value: "39", label: "Internal Tools Built", color: "text-[#FF6B35]" },
   ];
 
   return (
@@ -115,6 +121,47 @@ export const About = () => {
           >
             {t("about.description")}
           </p>
+        </motion.div>
+
+        {/* Stats Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mb-16"
+        >
+          <div className={`
+            grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4
+            ${isRTL ? 'direction-rtl' : ''}
+          `}>
+            {stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                className={`
+                  p-4 rounded-xl text-center
+                  ${isDark 
+                    ? "bg-[#16181C] border border-white/10" 
+                    : "bg-gray-50 border border-gray-200"
+                  }
+                `}
+              >
+                <div className={`text-3xl md:text-4xl font-bold mb-1 ${stat.color}`}>
+                  {stat.value}
+                </div>
+                <div className={`
+                  text-xs md:text-sm
+                  ${isDark ? "text-gray-400" : "text-gray-600"}
+                `}>
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -206,44 +253,28 @@ export const About = () => {
               }
             `}
             >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center">
-                  <div
-                    className={`
-                    text-3xl font-bold mb-2
-                    ${isDark ? "text-[#4F7FFF]" : "text-[#4F7FFF]"}
-                  `}
-                  >
-                    20+
-                  </div>
-                  <div
-                    className={`
-                    text-sm
-                    ${isDark ? "text-gray-400" : "text-gray-600"}
-                  `}
-                  >
-                    Projects
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div
-                    className={`
-                    text-3xl font-bold mb-2
-                    ${isDark ? "text-[#FF6B35]" : "text-[#FF6B35]"}
-                  `}
-                  >
-                    3
-                  </div>
-                  <div
-                    className={`
-                    text-sm
-                    ${isDark ? "text-gray-400" : "text-gray-600"}
-                  `}
-                  >
-                    Years Experience
-                  </div>
-                </div>
-              </div>
+              <h4 className={`
+                text-sm font-semibold mb-4 uppercase tracking-wider
+                ${isDark ? "text-gray-500" : "text-gray-400"}
+              `}>
+                Signature Patterns
+              </h4>
+              <ul className="space-y-2">
+                {[
+                  "WhatsApp-native checkout flows",
+                  "Custom product configurators",
+                  "Bilingual EN/AR + RTL support",
+                  "Two-repo/one-backend architecture",
+                ].map((pattern, index) => (
+                  <li key={index} className={`
+                    flex items-center gap-2 text-sm
+                    ${isDark ? "text-gray-300" : "text-gray-700"}
+                  `}>
+                    <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#4F7FFF] to-[#FF6B35]" />
+                    {pattern}
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         </div>

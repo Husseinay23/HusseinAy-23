@@ -17,53 +17,73 @@
   "about": {
     "title": "About Me",
     "subtitle": "Full-Stack Developer & Creative Problem Solver",
-    "description": "I'm a passionate full-stack developer with expertise in building modern, scalable web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.",
+    "description": "Computer Science student specializing in full-stack web development with strong frontend expertise in Next.js, React, TypeScript, and modern UI engineering. Experienced in building scalable and responsive web applications, optimizing frontend performance, integrating APIs and CMS systems, and developing full-stack solutions.",
     "skills": "Skills & Expertise",
     "experience": "Experience",
     "education": "Education",
     "passion": "My Passion",
-    "passionText": "I'm driven by the desire to create exceptional digital experiences. Whether it's crafting pixel-perfect UIs or architecting robust backend systems, I bring creativity and technical excellence to every project."
+    "passionText": "I'm passionate about frontend architecture, user experience, and high-performance web applications. Whether it's crafting pixel-perfect UIs, building custom product configurators, or architecting robust backend systems, I bring creativity and technical excellence to every project."
   },
   "experience": {
     "title": "Experience",
     "current": "Current",
+    "aqwas": {
+      "title": "Software Development Intern",
+      "company": "Aqwas",
+      "location": "Saudi Arabia (Remote)",
+      "period": "March 2026 – May 2026",
+      "description": "Led the frontend redesign and development of a government tourism platform for the Asser region using Next.js, React, and TypeScript. Designed and implemented 20+ responsive pages and reusable UI components based on Figma designs. Increased website performance by 80% through Lighthouse optimization. Built Arabic/English localization with dark/light mode support. Integrated frontend with Directus CMS and contributed to an AI SaaS Proposal Generator with OpenAI GPT features."
+    },
     "harmonically": {
-      "title": "Full-Stack Developer",
+      "title": "Junior Full-Stack Developer",
       "company": "Harmonically Labs",
       "location": "Remote",
-      "period": "2024 - Present",
-      "description": "Developing and maintaining web applications, working with modern technologies to deliver high-quality digital solutions for enterprise clients."
+      "period": "August 2025 – February 2026",
+      "description": "Worked as a junior full-stack developer for ~7 months on a startup team, contributing to two production platforms that are now live and have been sold. Built EcoSouk, a multi-tenant marketplace with merchant admin, and Asalyha, an e-commerce platform for a Saudi Arabia-based retailer. Used TypeScript and Medusa JS as the commerce backend."
     },
     "united": {
       "title": "Network Operations Center (NOC) Specialist",
       "company": "United.CD",
       "location": "Kinshasa, DRC Congo",
-      "period": "October 2024 - January 2025",
+      "period": "October 2024 – January 2025",
       "description": "Troubleshoot network issues, detect and respond to alerts, configure and deploy network equipment, and support remote access services."
     },
     "oscar": {
       "title": "Business Operations Manager",
       "company": "Oscar Print",
       "location": "Kinshasa, DRC Congo",
-      "period": "June 2018 - August 2018",
+      "period": "June 2018 – August 2018",
       "description": "Managed and participated with a team in a printing house and cybercafé. Fixed streamlining issues, learned various printing tools, and participated in pricing and customer negotiations."
     }
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Automatically fetched from GitHub",
+    "subtitle": "A showcase of production platforms, client work, and technical experiments",
     "viewCode": "View Code",
     "viewLive": "Live Demo",
+    "viewDetails": "View Details",
     "noDescription": "No description provided",
     "loading": "Loading projects...",
     "error": "Failed to load projects",
     "filters": {
       "all": "All",
-      "react": "React",
-      "typescript": "TypeScript",
-      "fullstack": "Fullstack",
-      "uiux": "UI/UX",
-      "systems": "Systems"
+      "flagship": "Flagship",
+      "inProgress": "In Progress",
+      "mobile": "Mobile",
+      "research": "Research"
+    },
+    "categories": {
+      "flagship": "Flagship Project",
+      "inProgress": "In Progress",
+      "mobile": "Mobile App",
+      "research": "Research / Technical"
+    },
+    "status": {
+      "liveSold": "Live, Sold",
+      "live": "Live",
+      "complete": "Complete",
+      "inProgress": "In Progress",
+      "portfolio": "Portfolio Piece"
     }
   },
   "contact": {
@@ -100,4 +120,3 @@
     "dark": "Dark Mode"
   }
 }
-
